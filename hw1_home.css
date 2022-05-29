@@ -1,0 +1,155 @@
+html{
+  font-size: 10px;
+}
+
+body {
+  margin: 0px; 
+}
+
+header {
+  height: 100px; 
+  width: 100%; 
+  display: flex; 
+  justify-content: center; 
+}  
+
+header, footer {
+    background-image: url('zampe.jpg');
+}
+
+h1 {
+  font-family: Roboto, sans-serif;
+  font-size: 3rem;   
+  max-width: 780px;     
+  z-index: 1;    
+  align-self: flex-end;
+}
+
+h1, h2 { 
+  color: rgb(0, 0, 0);   
+}
+
+nav {
+  position: absolute;
+  top: 2%; 
+  right: 2%;
+} 
+
+a:link {
+  color: white;
+}
+ 
+a:active, a:visited {
+  color: grey;
+}
+
+#flex-container1 {
+  display: flex; 
+}
+
+.flex-item {
+  font-size: 1.5rem; 
+  font-weight: 900;
+  font-family: Hurricane, sans-serif;
+  border-radius: 20px; 
+  background-color: rgb(0, 0, 0);
+  width: 60px; 
+  margin: 8px; 
+  text-align: center; 
+}
+
+main {
+  width: 100%; 
+  display: flex;
+  flex-grow: 1; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+div {
+    width: 100%;
+}
+
+a.block { 
+    display:block;
+    background-color: rgba(241, 235, 235, 0.938);
+    width: 85%;
+    height: 200px;
+    border: 2px solid rgb(0, 0, 0); 
+    text-decoration: none;
+    margin: 25px;
+    text-align: center;
+    justify-content: center;
+}
+
+a.block:hover, a.block:focus, a.block:active { 
+    background-color:rgba(128, 128, 128, 0.475); 
+}
+
+.testo {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: black;
+}
+#condividi {
+    background-image: url('cond.jpeg');
+    background-size: contain;
+}
+
+#acquista {
+    background-image: url('acquista.png');
+    background-size: cover;
+}
+#adotta {
+    background-image: url('canile.jpeg');
+    background-size: contain;
+}
+
+.selezionato {
+    background-color: #cfe3ff;
+}
+
+footer {
+  display: flex;
+  height: 35px;
+  font-size: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+ 
+h2 {
+  font-family: Caveat, sans-serif;
+  font-style: italic;
+  margin-right: 2%;
+}
+
+.invisibile {
+  display: none;
+}
+
+@media (max-width: 500px) { 
+  html{
+    font-size: 10px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  header {
+    height: 80px; 
+  }
+
+  .flex-item {
+    font-size: 1rem; 
+    width: 40px; 
+    margin: 8px; 
+  }
+  
+  nav{
+    justify-content: space-between;
+    right: auto;
+  }
+}
+
